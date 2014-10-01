@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- RelativeLayout che conterrà una singola entry della lista degli allenamenti ed ospiterà il layout che conterrà la 
+	 lista degli esercizi ad esso associati. 
+ 	 Importante: la riga "android:descendantFocusability="blockDescendants" permette di far funzionare correttamente
+ 	 i bottoni presenti nella lista degli esercizi e le entry stesse degli allenamenti. Senza questo, il bottone
+	 prevarrebbe sull'evento di click sull'entry di un allenamento  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/training_item_supercontainer"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="#f4f5f7"
+    android:descendantFocusability="blocksDescendants" >
+    
+    <!-- Contenitore degli elementi della entry -->
+
+    <RelativeLayout
+        android:id="@+id/trainingEntryContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="@drawable/list_item_selector"
+        android:padding="10dp" >
+
+        <!-- Testo per il nome dell'allenamento -->
+
+
+        <!-- Testo per il gruppo -->
+
+
+        <!-- Testo per l'ora di inizio-fine -->
+
+        <View
+            android:id="@+id/arrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_expand_holo" />
+
+        <TextView
+            android:id="@+id/trainingHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:singleLine="false"
+            android:text="12:30-14:30"
+            android:textColor="#4E535D" />
+
+        <TextView
+            android:id="@+id/trainingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/trainingHour"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Allenamento"
+            android:textColor="#4E535D" />
+
+        <TextView
+            android:id="@+id/trainingGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/trainingName"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42dp"
+            android:gravity="center"
+            android:text="Gruppo 1"
+            android:textColor="#4E535D" />
+
+    </RelativeLayout>
+
+   <!--  LinearLayout che conterrà la lista degli esercizi di un dato allenamento, popolata nel codice. Il marginTop
+   		 serve per far apparire la lista degli esercizi appena sotto l'allenamento. Il "visibility="gone" serve perchè
+   		 altrimenti quando si apre la schermata, anche se il layout inizialmente non contiene esercizi, si vede una sottile
+   		 linea bianca sotto ogni entry della lista degli allenamenti -->
+
+   <LinearLayout
+	    android:id="@+id/day_view_exercise_list_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="66dp"
+	    android:visibility="gone"
+	    android:orientation="vertical" >
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- RelativeLayout che conterrà una singola entry della lista dei tempi di un'atleta -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/day_view_exercise_list_item_linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f4f5f7"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+    
+   	<!-- Questo RelativeLayout ha il solo scopo di ospitare il background, che sennò sarebbe largo quanto il display -->
+
+    <RelativeLayout
+        android:id="@+id/day_view_exercise_single_entry_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_training_layout" >
+    
+        <!-- TextView con il numero della ripetizione -->
+
+	    <TextView
+	        android:id="@+id/num_ripetizione"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentStart="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:text="2."
+	        android:textSize="15sp" />
+	    
+	    <!-- Bottone che ha come testo il tempo dell'atleta per la data ripetizione e che se premuto
+	    	 apre la dialog per modificare il tempo -->
+
+	    <Button
+	        android:id="@+id/athlete_time_button"
+	        style="?android:attr/spinnerStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="right|center_vertical"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:gravity="center_vertical|center_horizontal|center"
+	        android:minHeight="45dp"
+	        android:minWidth="190dp"
+	        android:text="00&apos;00&quot;"
+	        android:textColor="#434a4f"
+	        android:textSize="17sp" />
+
+     </RelativeLayout>
+
+</RelativeLayout>

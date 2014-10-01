@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ad_btn_blue_large_p" android:state_pressed="true"/> <!-- pressed -->
+    <item android:drawable="@drawable/ad_btn_blue_large_n" android:state_pressed="false"/> <!-- normal -->
+
+</selector>

@@ -1,0 +1,109 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=1652, tid=672
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_25-b17
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.25-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000021ac800):  JavaThread "Unknown thread" [_thread_in_vm, id=672, stack(0x0000000002370000,0x0000000002470000)]
+
+Stack: [0x0000000002370000,0x0000000002470000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000021ac800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=672, stack(0x0000000002370000,0x0000000002470000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.011 loading class 0x00000000022dfce0 done
+Event: 0.011 loading class 0x00000000022a2110 done
+Event: 0.011 loading class 0x00000000022a20e0
+Event: 0.011 loading class 0x00000000022edf60
+Event: 0.011 loading class 0x00000000022edf60 done
+Event: 0.011 loading class 0x00000000022edfa0
+Event: 0.012 loading class 0x00000000022edfa0 done
+Event: 0.012 loading class 0x000000000895e120
+Event: 0.012 loading class 0x000000000895e120 done
+Event: 0.012 loading class 0x00000000022a20e0 done
+
+
+Dynamic libraries:
+0x000000013f980000 - 0x000000013f9b3000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x0000000077c10000 - 0x0000000077db9000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000779f0000 - 0x0000000077b0f000 	C:\Windows\system32\kernel32.dll
+0x000007fefce60000 - 0x000007fefcecb000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefe6a0000 - 0x000007fefe77b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefe7b0000 - 0x000007fefe84f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefeff0000 - 0x000007feff00f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe550000 - 0x000007fefe67d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077b10000 - 0x0000000077c0a000 	C:\Windows\system32\USER32.dll
+0x000007feff210000 - 0x000007feff277000 	C:\Windows\system32\GDI32.dll
+0x000007fefe120000 - 0x000007fefe12e000 	C:\Windows\system32\LPK.dll
+0x000007fefed40000 - 0x000007fefee09000 	C:\Windows\system32\USP10.dll
+0x000007fefb750000 - 0x000007fefb944000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefecc0000 - 0x000007fefed31000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefe780000 - 0x000007fefe7ae000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe850000 - 0x000007fefe959000 	C:\Windows\system32\MSCTF.dll
+0x0000000059fe0000 - 0x000000005a0b1000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x00000000598d0000 - 0x0000000059fdf000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007feec3d0000 - 0x000007feec3d9000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefe960000 - 0x000007fefe9ad000 	C:\Windows\system32\WS2_32.dll
+0x000007fefe3e0000 - 0x000007fefe3e8000 	C:\Windows\system32\NSI.dll
+0x000007fef9130000 - 0x000007fef916b000 	C:\Windows\system32\WINMM.dll
+0x0000000077de0000 - 0x0000000077de7000 	C:\Windows\system32\PSAPI.DLL
+0x000000005f920000 - 0x000000005f92f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000056b50000 - 0x0000000056b78000 	C:\Program Files\Java\jre7\bin\java.dll
+0x000000005f8b0000 - 0x000000005f8c5000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\Tiffano\android-sdks\platforms\android-19\android.jar 
+java_command: com.example.swimdroid.Coda
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files (x86)\Java\jre6\lib\ext\QTJava.zip
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\OSSBuild\GStreamer\v0.10.7\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\PC Connectivity Solution\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Calibre2\
+USERNAME=Tiffano
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 15 Stepping 11, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 15 stepping 11, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc
+
+Memory: 4k page, physical 4193400k(668736k free), swap 8384936k(2935976k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.25-b01) for windows-amd64 JRE (1.7.0_25-b17), built on Jun 21 2013 12:58:32 by "java_re" with unknown MS VC++:1600
+
+time: Tue Jan 21 13:03:22 2014
+elapsed time: 0 seconds
+

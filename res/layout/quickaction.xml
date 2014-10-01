@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** /res/layout/quickaction.xml
+**
+** Author: Lorensius W. L. T <lorenz@londatiga.net>
+**
+*/ 
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+        
+    <!-- Immagine della freccia in su -->
+    
+    <!-- Contenitore delle azioni -->
+
+    <LinearLayout
+        android:id="@+id/actions_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- Anche se avere due LinearLayout messi così sembra inutile, meglio lasciare così perchè sennò
+             tocca modificare del codice in QuickAction.java and it's not worth it -->
+
+        <LinearLayout
+            android:id="@+id/tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.95"
+        android:background="@drawable/quickaction"
+            android:orientation="horizontal" >
+            
+            	<!-- Queste due TextView non fanno un cazzo, è che questo LinearLayout si aspetta due figli 
+            	     e se non ci sono crasha malamente. Meglio lasciare così perchè sennò
+          		    tocca modificare del codice in QuickAction.java and it's not worth it-->
+            	<TextView 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_gravity="center"/>
+            	
+            	<TextView 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_gravity="center"/>
+            	
+            	<TextView 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_gravity="center"/>
+            	
+            	<TextView 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_gravity="center"/>
+            	
+            	<TextView 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_gravity="center"/>
+        </LinearLayout>
+            
+    </LinearLayout>
+
+</RelativeLayout>

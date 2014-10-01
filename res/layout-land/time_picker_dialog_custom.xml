@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RelativeLayout che sarà da contenitore per tutta la dialog -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+	
+    <!-- LinearLayout che conterrà l'header della dialog, ovvero le cifre che si vedono -->
+        
+    <!-- LinearLayout che contiene la tastiera con i numeri -->
+	
+    <!-- Inserisco piccola view che separa il keypad con il bottone "done" mettendo una sottile riga nera -->
+	
+    <!-- LinearLayout che contiene il bottone "done" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp" >
+
+        <LinearLayout
+            android:id="@+id/time_header_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/first_digit"
+                style="@style/time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:importantForAccessibility="no"
+                android:text="0"
+                android:textSize="@dimen/time_label_size"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/second_digit"
+                style="@style/time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/first_digit"
+                android:importantForAccessibility="no"
+                android:text="0"
+                android:textSize="@dimen/time_label_size"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/separator"
+                style="@style/time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/second_digit"
+                android:importantForAccessibility="no"
+                android:paddingLeft="@dimen/separator_padding"
+                android:paddingRight="@dimen/separator_padding"
+                android:text="&apos;"
+                android:textSize="@dimen/time_label_size" />
+
+            <TextView
+                android:id="@+id/third_digit"
+                style="@style/time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/separator"
+                android:importantForAccessibility="no"
+                android:text="0"
+                android:textSize="@dimen/time_label_size"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/fourth_digit"
+                style="@style/time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/third_digit"
+                android:importantForAccessibility="no"
+                android:text="0"
+                android:textSize="@dimen/time_label_size"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/separatorSwim"
+                style="@style/time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/fourth_digit"
+                android:paddingLeft="@dimen/separator_padding"
+                android:paddingRight="@dimen/separator_padding"
+                android:text="\&quot;"
+                android:textSize="@dimen/time_label_size"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/line_background" />
+
+        <LinearLayout
+            android:id="@+id/keypad_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:columnCount="3"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_digit_1"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/button_digit_2"
+                    android:layout_gravity="left"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/timepicker_pad_button_selector"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/button_digit_3"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/button_digit_4"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/button_digit_5"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/button_digit_6"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/button_digit_7"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/button_digit_8"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/button_digit_9"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/button_digit_0"
+                    android:layout_margin="2dp"
+                	android:background="@drawable/timepicker_pad_button_selector"
+                    android:layout_column="1"
+                    android:layout_gravity="left"
+                    android:minHeight="50dp"
+                    android:minWidth="75dp"
+                    android:text="0" />
+            </GridLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/black_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_background" />
+
+    <LinearLayout
+        android:id="@+id/done_button_container"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/done_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/done_label"
+            android:textColor="@color/done_text_color"
+            android:textSize="@dimen/done_label_size" />
+    </LinearLayout>
+
+</LinearLayout>

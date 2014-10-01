@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/day_view_exercise_list_item_supercontainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f4f5f7"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+    
+   	<!-- Questo RelativeLayout ha il solo scopo di ospitare il background, che sennò sarebbe largo quanto il display -->
+    <RelativeLayout
+        android:id="@+id/day_view_exercise_single_entry_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_training_layout"
+        android:padding="10dp" >
+    
+        <!-- TextView con valore fisso -->
+	    <TextView
+	        android:id="@+id/ripetizioni_per_distanza"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/ripetizioni_per_distanza"
+	        android:textColor="#434a4f" />
+	    
+	    <!-- TextView con valore dipendente dall'esercizio -->
+	    <TextView
+	        android:id="@+id/ripetizioni_per_distanza_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="4 x 100m"
+	        android:textColor="#434a4f" />
+	    
+	    <!-- TextView con valore fisso -->
+	    <TextView
+	        android:id="@+id/stile"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@id/ripetizioni_per_distanza"
+	        android:text="@string/stile"
+	        android:textColor="#434a4f" />
+	    
+	    <!-- TextView con valore dipendente dall'esercizio -->
+	    <TextView
+	        android:id="@+id/stile_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/ripetizioni_per_distanza_value"
+	        android:text="Stile Libero - Completo"
+	        android:textColor="#434a4f" />
+	    
+	    <!-- TextView con valore fisso -->
+	    <TextView
+	        android:id="@+id/tipologia"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@id/stile"
+	        android:text="@string/andatura"
+	        android:textColor="#434a4f" />
+	    
+	    <!-- TextView con valore dipendente dall'esercizio -->
+	    <TextView
+	        android:id="@+id/tipologia_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/stile_value"
+	        android:text="A1 - Aerobico"
+	        android:textColor="#434a4f" />
+	    
+	    <!-- TextView con valore fisso -->
+	    <TextView
+	        android:id="@+id/tempo_di_percorrenza"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@id/tipologia"
+	        android:text="@string/tempo_di_percorrenza"
+	        android:textColor="#434a4f" />
+	    
+	    <!-- TextView con valore dipendente dall'esercizio -->
+	    <TextView
+	        android:id="@+id/tempo_di_percorrenza_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/tipologia_value"
+	        android:text="01&apos;00&quot;"
+	        android:textColor="#434a4f" />
+	    
+	    <Button
+	        android:id="@+id/visualizza_tempi"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tempo_di_percorrenza"
+	        android:layout_centerInParent="true"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/add_group_ex_selector"
+	        android:minHeight="41dp"
+	        android:minWidth="0dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp"
+	        android:text="@string/show_athletes_times"
+	        android:textColor="#ffffff"
+	        android:textSize="14sp" />
+
+	    <ImageView
+	        android:id="@+id/delete_exercise_image"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBottom="@+id/visualizza_tempi"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/exercises_list_action_selector"
+	        android:clickable="true"
+	        android:padding="6dp"
+	        android:src="@drawable/ic_delete_gray" />
+
+	    <ImageView
+	        android:id="@+id/modify_exercise_image"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBottom="@+id/visualizza_tempi"
+	        android:layout_alignParentRight="true"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/exercises_list_action_selector"
+	        android:clickable="true"
+	        android:padding="6dp"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/ic_edit_gray" />
+
+     </RelativeLayout>
+
+</RelativeLayout>

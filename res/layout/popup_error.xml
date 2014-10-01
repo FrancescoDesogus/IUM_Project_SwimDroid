@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** /res/layout/action_item.xml
+**
+** Author: Lorensius W. L. T <lorenz@londatiga.net>
+**
+*/ 
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_inline_error_holo_light_am"
+    android:clickable="true"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+	<TextView
+	    android:id="@+id/tv_message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="2dp"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:text="Prova visualizzazione"
+	    android:textColor="#ffffff"
+	    android:textSize="13sp" />
+		
+</LinearLayout>

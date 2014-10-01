@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_training_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.3"
+    android:background="@drawable/add_training_selector"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/addTrainingButtonLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal|fill_horizontal"
+        android:adjustViewBounds="true"
+        android:alpha="0.7"
+        android:background="@drawable/add_training_selector"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="false"
+        android:paddingBottom="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="130dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/addthis500" />
+
+    <TextView
+        android:id="@+id/NoTrainingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:text="@string/no_training_today_add_one"
+        android:textSize="18sp" />
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cell_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="5dp" >
+
+    <View
+        android:id="@+id/eventPresent"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="#5a90c7"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:gravity="top|right"
+        android:paddingBottom="13dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="1dp"
+        android:text="prova" />
+
+</LinearLayout>

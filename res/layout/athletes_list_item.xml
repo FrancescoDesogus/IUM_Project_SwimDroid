@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- RelativeLayout che conterrà una singola entry della lsita degli atleti ed ospiterà il layout che conterrà la
+	 lista degli tempi ad esso associati. 
+ 	 Importante: la riga "android:descendantFocusability="blockDescendants" permette di far funzionare correttamente
+ 	 i bottoni presenti nella lista dei tempi e le entry stesse degli atleti. Senza questo, il bottone
+ 	 prevarrebbe sull'evento di click sull'entry di un'atleta  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="#f4f5f7"
+    android:descendantFocusability="blocksDescendants" >
+    
+    <!-- Contenitore degli elementi della entry -->
+
+    <RelativeLayout
+        android:id="@+id/trainingEntryContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="@drawable/list_item_selector"
+        android:padding="6dp" >
+        
+	    <View
+	        android:id="@+id/arrow"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="5dp"
+	        android:background="@drawable/ic_expand_holo" />
+        
+       <!--  Testo per il nome dell'atleta --> 
+
+	   <TextView
+	       android:id="@+id/athleteName"
+	       android:layout_width="wrap_content"
+	       android:layout_height="20dp"
+	       android:layout_centerInParent="true"
+	       android:ellipsize="marquee"
+	       android:singleLine="true"
+	       android:text="Mario Rossi"
+	       android:textColor="#4E535D"
+	       android:textSize="18sp"
+	       android:textStyle="bold" />
+	   
+   </RelativeLayout>
+
+    
+   <!--  LinearLayout che conterrà la lista dei tempi di un dato atleta, popolata nel codice. Il marginTop
+   		 serve per far apparire la lista dei tempi appena sotto l'atleta. Il "visibility="gone" serve perchè
+   		 altrimenti quando si apre la schermata, anche se il layout inizialmente non contiene esercizi, si vede una sottile
+   		 linea bianca sotto ogni entry della lista degli atleti -->
+   <LinearLayout
+	    android:id="@+id/athletes_times_list_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="66dp"
+	    android:visibility="gone"
+	    android:orientation="vertical" >
+	</LinearLayout>
+	
+</RelativeLayout>
