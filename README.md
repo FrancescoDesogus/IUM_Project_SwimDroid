@@ -6,13 +6,17 @@ Nel progetto abbiamo usato diversi package creati da altri sviluppatori, che abb
 In particolare, i package 
 - com.android.datetimepicker 
 - com.android.datetimepicker.time
+
 sono relativi al TimePicker di Google per la scelta dell’ora tramite orologio;
+
 i package
--com.antonyt.infiniteviewpager
+- com.antonyt.infiniteviewpager
 - com.roomorama.caldroid
+
 sono relativi al calendario dell’app;
 il package
 - net.londatiga.android.popupwindow
+
 è relativo alla finestra di popup che appare quando si tiene premuto su un allenamento programmato all’interno dell’app.
 
 I restanti package sono quelli che contengono il codice effettivamente scritto da noi.
