@@ -1,7 +1,7 @@
 IUM_Project_SwimDroid
 =====================
 
-Autori: Francesco Desogus, Gabriele Marini
+Autori: Francesco Desogus, Gabriele Marini (Gabryxx7)
 
 Nel progetto abbiamo usato diversi package creati da altri sviluppatori, che abbiamo utilizzato così com’erano per fare determinate cose dell’interfaccia in alcune schermate.
 
